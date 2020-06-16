@@ -1,4 +1,10 @@
+import os
+
+def cls():
+    os.system('cls')
+
 def calculadora():
+    cls()
     numero_escolhido = int(input('Qual é o número que você deseja saber a tabuada?'))
     tabuada = 0
     while tabuada <= 10:
@@ -10,4 +16,6 @@ def calculadora():
         calculadora()
     elif pergunta == 2:
         print("TCHAU!")
+
 calculadora()
+
